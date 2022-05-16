@@ -210,6 +210,43 @@ Estos, por supuesto, no necesitan que se introduzca por parámetro el resultado 
 assertTrue(resultado); // correcto
 assertTrue(true, resultado); // innecesario.
 ```
+
+A continuación veremos el código con Junit y version de pruebas:
+```
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class CalculadoraJunitTest {
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+	}
+
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	@AfterEach
+	void tearDown() throws Exception {
+	}
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}
+```
+Para crear este Junit le damos a click derecho en el java -> new -> junit testcase
 ___
 - Segundo Commit.
 ___
